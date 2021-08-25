@@ -1,0 +1,198 @@
+@font-face {
+    font-family:Pacifico;
+src:url(fuentes/Pacifico-Regular.ttf)
+}
+
+@font-face {
+    font-family:Orelega;
+src:url(fuentes/OrelegaOne-Regular.ttf)
+}
+
+@font-face {
+    font-family:Lukis;
+src:url(fuentes/LuckiestGuy-Regular.ttf)
+}
+
+:root{
+      
+
+    --primary: #FDFEFE;
+    --secundary:#FF0000;
+    --black-text :#FFE900;
+    --background:#F7F9F9;
+    --white-text:#212F3D;
+    --button-hover: #404040;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+   
+   background-color: #212F3D;
+    font-family:Lukis; }
+
+header  {
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgoruro/oruro-fondo-daiblo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .logo{
+     width: 100px;
+     margin-left: 20px;
+     margin-top: 20pX;
+    
+ }
+
+.bar-btn{
+    font-size: 25px;
+    color: #FDFEFE;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position:fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: #CC0000;
+    text-align: center;
+    transition: all .5s;
+}
+ 
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+.nav-menu li a {
+    color: #000000;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Pacifico;
+
+}
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: #FDFEFE;
+    transition:  .3s;
+} 
+#check{
+    display: none;
+}
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+/*banner text*/
+
+.banner.text{
+    padding: 0 30px;
+    margin-top: 250px;
+    text-align:center;
+    color: #000000;
+
+}
+
+.banner.text h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+
+.banner.text h2{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.button1{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: #CC0000 ;
+    color: #000000;
+    border-radius: 15px;
+    border: 5px solid #000000;
+
+}
+
+.button1:hover{
+    background-color: #FDFEFE;
+    color: #000000;
+    transition: .5s;
+    border: 5px solid #000000;
+}
+
+.button2{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: #FDFEFE;
+    color: #000000;
+    border-radius: 15px;
+    border: 5px solid #000000;
+
+}
+
+.button2:hover{
+    background-color: #CC0000;
+    color: #000000;
+    transition: .5s;
+    border: 5px solid #000000;
+}
+
+/* responsive*/
+
+@media screen and (min-width: 1325px){
+    .logo{
+        margin-left: 50px;
+
+    }
+     nav{
+         height: 100px;
+     }
+     .bar-btn{
+         display: none;
+     }
+     .nav-menu{
+         position: relative;
+         height: 100px;
+         top: 0;
+         background: none;
+         transition: none;
+         text-align: right;
+         margin-right: 50px;
+     }
+     .nav-menu li{
+      display: inline-block;
+      line-height: 100px;
+      margin: 0 20px;
+      transition: none;
+     }
+
+     .nav-menu li a{
+         font-size: 12px;
+     }
+     .banner.text h1{
+         font-size: 70px;
+         margin-bottom: 30px;
+     }
+     .banner.text h2{
+         font-size: 30px;     }
+}
