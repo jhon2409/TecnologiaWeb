@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/ejercicio2.js"></script>
+    <link rel="stylesheet" href="paractica3.css">
+    <title>Practica</title>
+</head>
+<body>
+       
+       <script>
+           (function formatoFecha() {
+              var fecha=new Date();
+              // dia
+              var dias=['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
+              var dia=dias[fecha.getDay()];
+              // mes
+              var meses=['Enero','fefrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+             var mes=meses[fecha.getMonth()];
+             // año
+             var año=fecha.getFullYear();
+              document.write(dia+ ', '+fecha.getDate()+ ' de ' +mes+' del ' + año);
+             }())
+       </script> 
+
+</body>
+</html>

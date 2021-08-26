@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="paractica3.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Temperatura</h1>
+      
+        <div class = 'contenedor'>
+            <form action="">
+
+                <input type="text"  id='num1'>
+                
+                <p>=</p> 
+    
+                <input class = 'btn' type="button" value='temperatura' onclick="temperatura()">
+    
+            </form>
+        </div>
+    <script>
+        function temperatura(){
+            var numero1=parseFloat(document.getElementById('num1').value);
+            if(numero1>=26){
+                alert("calor")
+               
+                
+            }
+            if(numero1<= 15){
+                alert("frio")
+            }
+              
+            else{
+                alert("templado")
+               
+            }
+
+        }
+       
+    </script>
+</body>
+</html>

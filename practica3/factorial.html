@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="paractica3.css">
+</head>
+<body>
+    <div class="contenedor">
+
+        <form action="">
+            <h2>Factorial</h2>
+
+            <input id="numero1" type="text">
+
+
+            
+            <p>=</p>
+
+            <input  id="resultado" type="text" readonly>
+
+            <input type="button" class="btn" onclick="factorial()" value="Resultado">
+
+        </form>
+
+    </div>
+    <script>
+        function factorial(numero1)
+        {
+            var num1=parseFloat(document.getElementById('numero1').value);
+          
+            var total=1
+            for (var i=num1; i>0; i--)
+            {
+                total*=i;
+                
+            }
+            document.getElementById('resultado').value=total;
+        }
+         
+    </script>
+     <div class="contenedor">
+
+        
+
+    </div>
+    
+    
+</body>
+</html>
