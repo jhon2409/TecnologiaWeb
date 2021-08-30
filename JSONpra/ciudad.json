@@ -5,7 +5,7 @@
         {
             "nombre":"cochabamba",
             "fundacion":1810,
-            "lugares turisticos": [
+            "lugares_turisticos": [
                 
                     "cristo de la concordia",
                     "la angostura",
@@ -20,6 +20,15 @@
                 "teleferico",
                 "lago titicaca",
                 "La isla del sol"
+            ]
+        },
+        {
+            "nombre":"ORURO",
+            "fundacion":"1928",
+            "lugares turisticos":[
+                "salar uyuni",
+                "toro toro",
+                "Casa de la moneda"
             ]
         }
     ]
