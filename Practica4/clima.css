@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+    color: white;
+    padding: 50PX;
+    margin: 0px 300px 0px 300px;
+}
+header{
+    border: 5px purple solid;
+    border-radius: 15px;
+    text-align: center;
+    background:url(https://i1.wp.com/wikisabio.com/wp-content/uploads/2020/10/concepto-climas-lifeder-min.jpg?fit=900%2C471) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h2{
+    font-family:'Times New Roman', Times, serif;
+    
+}
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
