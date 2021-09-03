@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERIA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="API/clima.css">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="index.js">
+    
+</head>
+
+<body>
+
+
+    <!-- Ir Arriba -->
+    <div class="go-top">
+        <span class="fas fa-angle-up"></span>
+    </div>
+
+    <!-- Menu de Navegacion -->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo-box">
+                <h1><a href="inicio.html">ORURO.BO </a></h1>
+                <span class="btn-menu"><i class="fas fa-bars"></i></span>
+            </div>
+
+            <div class="list-container">
+                <ul class="lists">
+                    <li><a href="informacion.html">INFORMACION</a></li>
+                    <li><a href="Quevisitar.html">QUE VISISTAR</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="Hoteles.html">HOTELES</a></li>
+                    <li><a href="formulario/index.html">REGISTRATE</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Imagen Header -->
+        <div class="img-header">
+            <div class="welcome">
+                <h1>ORURO</h1>
+                <hr>
+                <p>GALERIA!!</p>
+
+            </div>
+        </div>
+
+        <div class="skew-abajo"></div>
+
+    </header>
+
+    <main>
+
+        <!-- Acerca de nosotros -->
+        <section class="acerca-de">
+            <h2>GALERIA</h2>
+            <div class="info-container">
+                <h2> CARNAVAL DE ORURO</h2>
+
+
+                <div class="about-gallery">
+                    <img src="oruroturista/GALERIA1.jpg" alt="">
+                    <img src="oruroturista/GALERIA2.jpg" alt="">
+                    <img src="oruroturista/GALERIA3.jpg" alt="">
+
+                </div>
+                <div class="about-gallery">
+                    <img src="oruroturista/GALERIA4.jpg" alt="">
+                    <img src="oruroturista/GALERIA5.jpg" alt="">
+                    <img src="oruroturista/GALERIA6.jpg" alt="">
+
+                </div>
+                <h2> SAJAMA</h2>
+
+
+                <div class="about-gallery">
+                    <img src="oruroturista/GALERIA7.jpg" alt="">
+                    <img src="oruroturista/GALERIA8.jpg" alt="">
+                    <img src="oruroturista/GALERIA9.jpg" alt="">
+
+                </div>
+                <h2>ARENALES</h2>
+                <div class="about-gallery">
+                    <img src="oruroturista/GALERIA10.jpg" alt="">
+                    <img src="oruroturista/GALERIA11.jpg" alt="">
+                    <img src="oruroturista/GALERIA12.jpg" alt="">
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="our-projects">
+            <div class="skew-arriba"></div>
+            <div class="deg-background"></div>
+
+            <div class="ejeZproject">
+                <div class="container-project">
+                    <div class="project-title">
+                        <h2> EL CLIMA </h2>
+                        <hr>
+                    </div>
+                  
+        </section>
+
+        <!-- datos clima -->
+      
+
+        <div class="tiempored">
+          
+            <section class="tiempo">
+                <h2 style="color: black;">Oruro</h2>
+                <img src="https://beykwancehq.carrd.co/assets/images/image11.gif?v07355990676951" alt="">
+                <p>Temperatura:
+                    <br>
+                    <span id="tem-act"></span>&deg;
+                </p>
+                <p>la temperatura maxi en Oruro es:
+                    <span  id="tem-act1"></span>&deg;
+                </p>
+                <p>Humedad:
+                    <span id="tem-act2"></span>%
+                </p>
+                <p>Longuitud:
+                    <span id="tem-act3"></span> m
+                </p>
+                <p>Latitud:
+                    <span id="tem-act4"></span>
+                </p>
+
+                <p>amanecer:
+                    <span id="tem-act5"></span>
+                </p>
+
+            </section>
+            <section class="testimonios">
+                <div class="testimonios-title">
+                    <h4>Mas sobre el clima: <a href="https://openweathermap.org/api">https://openweathermap.org/api</a> </h4>
+                    <hr>
+                </div>
+               </section>
+        </div>
+      
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; ORURO.BO - 2021 | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/35db202371.js"></script>
+    <script src="index.js"></script>
+    <script src="API/clima.js"></script>
+
+</body>
+
+</html>

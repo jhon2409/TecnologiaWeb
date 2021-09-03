@@ -72,24 +72,27 @@ nav {
 }
 
 .nav-menu li {
+  
   display: none;
   line-height: 30px;
   margin: 50px 0;
   transition: all 0.5s;
 }
 .nav-menu li a {
+  font-size: 20px;
+  border-radius: 10px;
   color: #000000;
-  font-size: 50px;
+  margin: 10px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Lukis;
 }
-.nav-menu li a.active,
+
 .nav-menu li a:hover {
-  border: 2px #000000 solid;
+  
   border-radius: 3px;
   background-color: #cc0000;
-  color: #000000;
+  color :#fdfefe;
   transition: 0.3s;
 }
 #check {
@@ -166,23 +169,27 @@ nav {
     display: none;
   }
   .nav-menu {
+   
     position: relative;
     height: 100px;
     top: 0;
     background: none;
     transition: none;
     text-align: right;
-    margin-right: 50px;
+    margin-right: 10px;
   }
   .nav-menu li {
     display: inline-block;
     line-height: 100px;
-    margin: 0 20px;
+    margin: 10px 10px;
+    
     transition: none;
   }
 
   .nav-menu li a {
-    font-size: 12px;
+    font-size: 15px;
+    align-content: flex-end;
+   
   }
 
   .banner.text h1 {

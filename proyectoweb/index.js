@@ -7,7 +7,7 @@ var activador = true;
 
 btnMenu.addEventListener('click', (event) => {
 
-  //Icon X
+  //Icono X  transicion del icono de menu en modo responsivo
   barIconX.classList.toggle('fa-times');
 
    if(activador){
@@ -25,7 +25,7 @@ btnMenu.addEventListener('click', (event) => {
 
 });
 
-// Add class "active"
+//  clase "active" resalta del menu responsivo
 let enlaces = document.querySelectorAll('.lists li a');
 
 enlaces.forEach((element) => {
@@ -40,7 +40,7 @@ enlaces.forEach((element) => {
 
 });
 
-//Scroll Efect
+//Scroll Efecto desplaze de derecha hacia izquierda
 
  let prevScrollPos = window.pageYOffset;
  let goTop = document.querySelector('.go-top');
@@ -62,14 +62,14 @@ window.onscroll = () => {
   //Scoll Menu & Go Top & See Down (Styles)
   let arriba = window.pageYOffset;
 
-  //Conditions
+  //Condicion
   if(arriba <= 600){
     menuContent.style.borderBottom = 'none';
 
     //Ocultar Go Top
     goTop.style.right = '-100px';
   }else{
-    menuContent.style.borderBottom = '3px solid #ff2e63';
+    menuContent.style.borderBottom = '3px solid #FF0000';
 
     //Mostrar Go Top
     goTop.style.right = '0px';

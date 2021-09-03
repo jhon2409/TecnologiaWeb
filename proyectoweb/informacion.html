@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="estilomap.css">
 </head>
 
 <body>
@@ -32,8 +33,9 @@
                 <ul class="lists">
                     <li><a href="informacion.html" >INFORMACION</a></li>
                     <li><a href="Quevisitar.html">QUE VISISTAR</a></li>
-                    <li><a href="#">GALERIA</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
                     <li><a href="Hoteles.html">HOTELES</a></li>
+                    <li><a href="formulario/index.html">REGISTRATE</a></li>
                 </ul>
             </div>
         </nav>
@@ -163,8 +165,17 @@
                 </div>
 
             </div>
+            <!-- API GOGLE map -->
         </section>
-
+        <section class="testimonios">
+            <div class="testimonios-title">
+                <h2>UBICACION</h2>
+                <hr>
+            </div>
+            <div id="map"></div>
+            <script src="script.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+        </section>
     </main>
 
     <!-- Footer -->
