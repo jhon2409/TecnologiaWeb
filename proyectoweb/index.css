@@ -1,11 +1,31 @@
+@font-face {
+    font-family: Pacifico;
+    src: url(fuentes/Pacifico-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Orelega;
+    src: url(fuentes/OrelegaOne-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Lukis;
+    src: url(fuentes/LuckiestGuy-Regular.ttf);
+  }
 :root{
-    --red:#ff2e63;
+  
     --black:#252a34;
-    --blue:#08d9d6;
+ 
     --white:#eaeaea;
-    --title:35px;
+    --title:30px;
     --text:19px;
- }
+    
+    --primary: #FDFEFE;
+    --secundary:#FF0000;
+    --black-text :#FFE900;
+    --background:#F7F9F9;
+    --white-text:#212F3D;
+    --button-hover: #404040;}
  
  *{
      margin:0;
@@ -15,7 +35,7 @@
  body{
      background: #ffff;
      overflow-x: hidden;
-     font-family: 'Red Hat Text', sans-serif;
+     font-family: lukis;
  }
  .go-top{
      position: fixed;
@@ -24,7 +44,7 @@
      width: 50px;
      height: 50px;
      background: #fff;
-     border:2px solid var(--red);
+     border:2px solid #FF0000;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -33,7 +53,7 @@
      transition: 0.5s;
  }
  .go-top:hover{
-     background: var(--red);
+     background: #FF0000;
      color:#fff;
      border: 2px solid var(--white);
  }
@@ -66,6 +86,10 @@
  
  /** Navegation Menu **/
  #header{
+    background-image: url("imgoruro/oruro-fondo-daiblo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
      position: relative;
      width: 100%;
  }
@@ -85,8 +109,8 @@
  .menu .logo-box{margin-left: 20px;}
  .menu .logo-box h1 a{
      text-decoration: none;
-     font-size: var(--title);
-     font-weight: 400;
+     font-size: 30px;
+     font-weight: 600;
      color:var(--black);
  }
  .menu .list-container{margin-right: 20px;}
@@ -102,11 +126,11 @@
      font-size: 16px;
  }
  .menu .list-container ul li a.active{
-     background: var(--red);
+     background: #FF0000;
      color:#fff;
  }
  .menu .list-container ul li a:hover{
-     background: var(--red);
+     background: #FF0000;
      color:#fff;
  }
  
@@ -125,8 +149,8 @@
          transition: 0.5s;
          cursor: pointer;
      }
-     .btn-menu > .fa-times{color: var(--red);}
-     .btn-menu > .fa-bars:hover{color:var(--red);}
+     .btn-menu > .fa-times{color: #FF0000;}
+     .btn-menu > .fa-bars:hover{color:#FF0000;}
      .menu .logo-box{margin-left: 30px;}
      .menu .list-container{
          position: fixed;
@@ -143,7 +167,7 @@
          justify-content: center;
          align-items: center;
          flex-direction: column;
-         border-top:4px solid var(--red);
+         border-top:4px solid #FF0000;
      }
      .menu .list-container ul li{
          width: 90%;
@@ -158,11 +182,11 @@
      }
      .menu .list-container ul li a.active{
          background: none;
-         color:var(--red);
+         color:#FF0000;
      }
      .menu .list-container ul li a:hover{
          background: none;
-         color:var(--red);
+         color:#FF0000;
      }
  }
  
@@ -211,7 +235,7 @@
  .img-header .welcome > button{
      width: 170px;
      height: 40px;
-     background: var(--red);
+     background: #FF0000;
      border-radius: 24px;
      border:none;
      outline: none;
@@ -223,7 +247,7 @@
      transition: 0.5s;
  }
  .img-header .welcome > button:hover{
-     background:var(--blue);
+     background:#FF0000;
  }
  
  @media only screen and (max-width:773px ){
@@ -288,7 +312,7 @@
      text-align: center;
      line-height: 40px;
      font-size: 20px;
-     background: var(--red);
+     background: #FF0000;
      border: none;
      outline: none;
      border-radius: 20px;
@@ -296,7 +320,7 @@
      cursor: pointer;
      transition: 0.5s;
  }
- .acerca-de .info-container .about-more button:hover{background: var(--blue);}
+ .acerca-de .info-container .about-more button:hover{background: #FF0000;}
  
  @media only screen and (max-width:773px){
      .acerca-de .info-container .about-gallery{flex-direction: column;}
@@ -422,7 +446,7 @@
      cursor: pointer;
  }
  .testimonios .box-testimonio .card-testimonio .testimonio-text{
-     border: 2px solid var(--red);
+     border: 2px solid #FF0000;
      padding:20px;
      border-radius: 20px;
      transition: 0.1s;
@@ -431,7 +455,7 @@
  .testimonios .box-testimonio .card-testimonio .testimonio-text h4{
      font-size: 30px;
      font-weight: 400;
-     color: var(--red);
+     color: #FF0000;
      text-align: center;
      margin-bottom: 10px;
      transition: 0.1s;
@@ -443,10 +467,10 @@
      color: var(--black);
  }
  .testimonios .box-testimonio .card-testimonio .testimonio-text:hover{
-     border: 2px solid var(--blue);
+     border: 2px solid #252a34;
  }
  .testimonios .box-testimonio .card-testimonio .testimonio-text:hover h4{
-     color: var(--blue);
+     color: #252a34;
  }
  
  @media only screen and (max-width:890px){
@@ -529,7 +553,7 @@
      margin:auto;
      border-radius: 24px;
      outline: none;
-     border:1.5px solid var(--red);
+     border:1.5px solid #FF0000;
      text-align: center;
      font-size: 18px;
      color: var(--black);
@@ -541,7 +565,7 @@
      padding: 20px;
      border-radius: 24px;
      outline: none;
-     border:1.5px solid var(--red);
+     border:1.5px solid #FF0000;
      font-size: 15px;
      color: var(--black);
  }
@@ -556,7 +580,7 @@
      text-align: center;
      line-height: 40px;
      font-size: 20px;
-     background: var(--red);
+     background: #FF0000;
      border: none;
      outline: none;
      border-radius: 20px;
@@ -565,7 +589,7 @@
      transition: 0.5s;
  }
  .footer .formulario-content #formulario button:hover{
-     background: var(--blue);
+     background: #FF0000;
  }
  .footer .formulario-content #formulario .mensaje-form{
      width: 100%;
